@@ -13,59 +13,59 @@ body {
     margin: 0;
 }
 
-/* Contenedor del título "Nuestros Sueños" */
+/* Contenedor del título */
 .titulo-container {
     background-color: white;
     color: #a1925a;
-    border: 2px solid #C5B358;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    font-size: 2.5rem;
+    border: 3px dashed #C5B358; /* Cambiado a borde punteado */
+    border-radius: 15px; /* Cambiado para bordes más redondeados */
+    padding: 25px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    font-size: 3rem; /* Tamaño de fuente ajustado */
     text-align: center;
-    width: 90vw;
-    max-width: 600px;
-    margin-bottom: 20px;
+    width: 85vw; /* Tamaño ajustado */
+    max-width: 550px;
+    margin-bottom: 25px;
 }
 
 /* Introducción debajo del título */
 .introduccion {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     color: #a1925a;
     text-align: center;
-    width: 90vw;
-    max-width: 600px;
-    margin-bottom: 20px;
+    width: 85vw;
+    max-width: 550px;
+    margin-bottom: 25px;
     font-family: 'Great Vibes', cursive;
-    padding: 10px;
+    padding: 15px;
     background-color: white;
-    border: 2px solid #C5B358;
-    border-radius: 10px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border: 3px dashed #C5B358; /* Cambiado a borde punteado */
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
-/* Estilo para la lista de sueños */
+/* Estilo para la lista */
 ul {
     list-style-type: none;
     padding: 0;
     margin-top: 20px;
-    width: 90vw;
-    max-width: 600px;
+    width: 85vw;
+    max-width: 550px;
 }
 
-/* Estilo para cada sueño */
+/* Estilo para cada elemento de la lista */
 li {
     background-color: white;
     color: #a1925a;
-    border: 2px solid #C5B358;
-    border-radius: 10px;
+    border: 3px dashed #C5B358; /* Cambiado a borde punteado */
+    border-radius: 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
-    margin-bottom: 10px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    font-size: 1.2rem;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    font-size: 1.4rem;
     font-family: 'Great Vibes', cursive;
 }
 
@@ -74,28 +74,29 @@ button {
     background-color: #C5B358;
     color: black;
     font-weight: bold;
-    padding: 5px 10px;
+    padding: 8px 12px;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.2s;
     font-size: 1rem;
 }
 
 button:hover {
     background-color: #d4af37;
+    transform: scale(1.1); /* Añadido efecto de escala */
 }
 
 /* Estilo para el input y el botón agregar */
 #sueñoInput, #agregarBtn {
     font-family: 'Great Vibes', cursive;
-    font-size: 1.2rem;
-    padding: 10px;
-    margin-top: 20px;
-    width: 90vw;
-    max-width: 600px;
-    border: 2px solid #C5B358;
-    border-radius: 10px;
+    font-size: 1.5rem;
+    padding: 12px;
+    margin-top: 25px;
+    width: 85vw;
+    max-width: 550px;
+    border: 3px dashed #C5B358; /* Cambiado a borde punteado */
+    border-radius: 15px;
     text-align: center;
 }
 
@@ -105,36 +106,37 @@ button:hover {
     color: black;
     font-weight: bold;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.2s;
 }
 
 #agregarBtn:hover {
     background-color: #d4af37;
+    transform: scale(1.1); /* Añadido efecto de escala */
 }
 
 /* Media Queries para ajustar en móviles */
 @media only screen and (max-width: 768px) {
     .titulo-container {
-        font-size: 2rem;
-        padding: 15px;
+        font-size: 2.5rem;
+        padding: 20px;
     }
 
     .introduccion {
-        font-size: 1.2rem;
-        padding: 10px;
+        font-size: 1.4rem;
+        padding: 12px;
     }
 
     li {
-        font-size: 1.5rem;
-        padding: 15px;
+        font-size: 1.3rem;
+        padding: 12px;
     }
 
     #sueñoInput, #agregarBtn {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
 
     button {
-        font-size: 1.2rem;
-        padding: 8px 16px;
+        font-size: 1.1rem;
+        padding: 10px 15px;
     }
 }
