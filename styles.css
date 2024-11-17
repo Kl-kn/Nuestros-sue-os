@@ -1,13 +1,15 @@
-/* Importamos la fuente de lujo */
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 
 body {
     font-family: 'Great Vibes', cursive;
     background-color: #f5f5f5;
     color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
     margin: 0;
-    padding: 0;
-    overflow-y: auto; /* Permite desplazamiento vertical */
 }
 
 /* Contenedor principal */
@@ -16,10 +18,10 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    min-height: 100vh; /* Asegura que el contenido mínimo ocupe toda la pantalla */
+    width: 100%;
 }
 
-/* Contenedor del título "Nuestros Sueños" */
+/* Contenedor del título */
 .titulo-container {
     background-color: white;
     color: #a1925a;
@@ -34,7 +36,7 @@ body {
     margin-bottom: 20px;
 }
 
-/* Introducción debajo del título */
+/* Introducción */
 .introduccion {
     font-size: 1.5rem;
     color: #a1925a;
@@ -42,14 +44,39 @@ body {
     width: 90vw;
     max-width: 600px;
     margin-bottom: 20px;
-    padding: 10px;
     background-color: white;
     border: 2px solid #C5B358;
     border-radius: 10px;
+    padding: 10px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-/* Estilo para la lista de sueños */
+/* Input y botón agregar */
+#sueñoInput, #agregarBtn {
+    font-family: 'Great Vibes', cursive;
+    font-size: 1.2rem;
+    padding: 10px;
+    margin-top: 20px;
+    width: 90vw;
+    max-width: 600px;
+    border: 2px solid #C5B358;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#agregarBtn {
+    background-color: #C5B358;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#agregarBtn:hover {
+    background-color: #d4af37;
+}
+
+/* Lista de sueños */
 ul {
     list-style-type: none;
     padding: 0;
@@ -58,7 +85,6 @@ ul {
     max-width: 600px;
 }
 
-/* Estilo para cada sueño */
 li {
     background-color: white;
     color: #a1925a;
@@ -75,6 +101,7 @@ li {
 
 /* Botón eliminar */
 button {
+    font-family: 'Great Vibes', cursive; /* Aplica la tipografía */
     background-color: #C5B358;
     color: black;
     font-weight: bold;
@@ -87,31 +114,6 @@ button {
 }
 
 button:hover {
-    background-color: #d4af37;
-}
-
-/* Estilo para el input y el botón agregar */
-#sueñoInput, #agregarBtn {
-    font-size: 1.2rem;
-    padding: 10px;
-    margin-top: 20px;
-    width: 90vw;
-    max-width: 600px;
-    border: 2px solid #C5B358;
-    border-radius: 10px;
-    text-align: center;
-}
-
-/* Botón agregar */
-#agregarBtn {
-    background-color: #C5B358;
-    color: black;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-#agregarBtn:hover {
     background-color: #d4af37;
 }
 
